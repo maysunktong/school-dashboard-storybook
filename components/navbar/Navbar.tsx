@@ -1,18 +1,20 @@
-import Link from "next/link";
 import SearchBar from "./Searchbar";
+import AnnouncementsNavIcon from "./AnnouncementNavIcon";
+import MessageNavIcon from "./MessageNavIcon";
+import UserProfileNavIcon from "./UserProfileNavIcon";
 
 export default function Navbar() {
   return (
-    <div>
+    <div className="flex justify-between items-center p-3">
       {/* Search bar */}
       <SearchBar />
-      <div className="flex gap-3">
+      <div className="flex gap-4">
         {/* Messages */}
-        <Link href="/">Message</Link>
+        <MessageNavIcon />
         {/* Announcements */}
-        <Link href="/">Announcements</Link>
+        <AnnouncementsNavIcon />
         {/* Profile */}
-        
+        <UserProfileNavIcon />
       </div>
     </div>
   );
