@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "../globals.css";
 import Link from "next/link";
-import Menu from "../../components/sidebar-menu/Menu";
-import Navbar from "../../components/navbar/Navbar";
+import Menu from "@/components/sidebar-menu/Menu";
+import Navbar from "@/components/navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Dashboard",
