@@ -18,18 +18,18 @@ import {
 import { ReactNode } from "react";
 
 /* Types */
-export interface MenuItem {
+export interface IMenuItem {
   label: string;
   icon: ReactNode;
   href: string;
 }
 
-export interface MenuGroup {
+export interface IMenuGroup {
   title: string;
-  items: MenuItem[];
+  items: IMenuItem[];
 }
 
-export const menuItems: MenuGroup[] = [
+export const menuItems: IMenuGroup[] = [
   {
     title: "TITLE",
     items: [

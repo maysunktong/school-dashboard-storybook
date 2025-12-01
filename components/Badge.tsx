@@ -1,6 +1,6 @@
 import { BadgeCheck, BellRing, TriangleAlert } from "lucide-react";
 
-type BadgeType = {
+type BadgeProps = {
   variant?:
     | "default"
     | "secondary"
@@ -21,7 +21,7 @@ export default function Badge({
   text = "This is a badge",
   children,
   ...props
-}: BadgeType) {
+}: BadgeProps) {
   const baseStyle =
     "rounded-full transition-colors flex gap-1 justify-center items-center";
 
