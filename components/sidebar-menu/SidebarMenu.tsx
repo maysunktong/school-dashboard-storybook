@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { menuItems } from "@/data/menuItem";
+import Tooltip from "../Tooltip";
 
 export default function Menu() {
   return (
@@ -14,7 +15,9 @@ export default function Menu() {
                 href={item.href}
                 className="flex justify-center lg:justify-start items-center gap-3 hover:text-gray-600"
               >
-                <span>{item.icon}</span>
+                <Tooltip label={item.label}>
+                  <span>{item.icon}</span>
+                </Tooltip>
                 <p className="hidden lg:block text-sm">{item.label}</p>
               </Link>
             ))}
