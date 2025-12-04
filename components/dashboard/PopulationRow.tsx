@@ -1,5 +1,5 @@
-import { EllipsisVertical } from "lucide-react";
 import Badge from "../Badge";
+import Card from "../Card";
 
 type PopulationCardType = {
   type: string;
@@ -7,14 +7,13 @@ type PopulationCardType = {
 
 export function PopulationCard({ type }: PopulationCardType) {
   return (
-    <div className="w-full relative rounded-2xl px-5 py-3 bg-purple-200 odd:bg-yellow-200">
-      <EllipsisVertical className="absolute top-2 right-2 text-white cursor-grabbing" />
+    <Card className="bg-purple-200 odd:bg-yellow-200">
       <Badge text="2025" />
       <p className="text-lg md:text-4xl font-bold text-foreground py-4">
         1,234
       </p>
       <p className="font-thin text-gray-500 pb-2">{type}</p>
-    </div>
+    </Card>
   );
 }
 
