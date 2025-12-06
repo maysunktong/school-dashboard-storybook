@@ -27,6 +27,7 @@ body {
 
 .react-calendar {
   width: 100% !important;
+  height: fit-content !important;
   border: none !important;
 }
 

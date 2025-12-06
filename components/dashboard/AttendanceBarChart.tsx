@@ -42,7 +42,7 @@ const data = [
 
 export default function AttendanceBarChart() {
   return (
-    <Card title="Class Attendance" className="bg-white">
+    <Card title="Class Attendance" className="w-full h-full bg-white">
       <BarChart
         style={{
           width: "100%",

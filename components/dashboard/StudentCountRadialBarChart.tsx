@@ -25,7 +25,7 @@ const data = [
 
 export default function StudentCountRadialBarChart() {
   return (
-    <Card title="Students" className="bg-white">
+    <Card title="Students" className="w-full h-full bg-white">
       <div className="relative w-full">
         <RadialBarChart
           className="w-full h-full"
