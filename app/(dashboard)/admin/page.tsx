@@ -3,11 +3,12 @@ import StudentCountRadialBarChart from "@/components/dashboard/StudentCountRadia
 import AttendanceBarChart from "@/components/dashboard/AttendanceBarChart";
 import FinanceLineChart from "@/components/dashboard/FinanaceLineChart";
 import EventCalendar from "@/components/dashboard/EventCalendar";
-import Announcements from "../../../components/dashboard/Announcements";
+import Announcements from "@/components/dashboard/Announcements";
 
 export default function AdminPage() {
   return (
     <div className="grid grid-cols-4 md:grid-cols-8 p-1 md:p-3 gap-2">
+      {/* Left */}
       <div className="grid col-span-4 md:col-span-5 lg:col-span-6 gap-2">
         <PopulationRow />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
@@ -22,6 +23,7 @@ export default function AdminPage() {
           <FinanceLineChart />
         </div>
       </div>
+      {/* Right */}
       <div className="w-full h-fit grid col-span-4 md:col-span-3 lg:col-span-2 gap-2">
         <EventCalendar />
         <Announcements />

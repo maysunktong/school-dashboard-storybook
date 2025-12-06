@@ -4,6 +4,7 @@ import {
   CircleCheckBig,
   Cog,
   Component,
+  FilePenLine,
   House,
   LibraryBig,
   LogOut,
@@ -36,7 +37,7 @@ export const menuItems: IMenuGroup[] = [
       {
         label: "Home",
         icon: <House />,
-        href: "/",
+        href: "/"
       },
       {
         label: "Announcements",
@@ -69,16 +70,20 @@ export const menuItems: IMenuGroup[] = [
         href: "/",
       },
       {
+        label: "Exams",
+        icon: <PencilRuler />,
+        href: "/",
+      },
+      {
         label: "Assignments",
         icon: <Component />,
         href: "/",
       },
       {
-        label: "Exams",
-        icon: <PencilRuler />,
+        label: "Results",
+        icon: <FilePenLine />,
         href: "/",
       },
-
       {
         label: "Attendance",
         icon: <CircleCheckBig />,
